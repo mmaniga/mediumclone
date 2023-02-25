@@ -4,11 +4,14 @@ import App from "./App";
 
 import { Auth0Provider } from "@auth0/auth0-react";
 
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
+const audience = process.env.REACT_APP_AUTH0_AUDIENCE;
 ReactDOM.render(
   <Auth0Provider
-    domain="dev-brwz8lpsjc0wpz0i.us.auth0.com"
-    clientId="F3kCwkrcTwHacOtXzA4WpFLYgKjNdog8"
-    audience="https://dev-brwz8lpsjc0wpz0i.us.auth0.com/api/v2/"
+    domain={domain}
+    clientId={clientId}
+    audience={audience}
     authorizationParams={{
       redirect_uri: window.location.origin,
     }}
