@@ -1,5 +1,6 @@
 import React from "react";
 
+import undraw_business_chat_re_gg4h from "../../assets/images/undraw_business_chat_re_gg4h.svg";
 const HomeSection = () => {
   const handleStartReding = () => {
     console.log("start reading clicked");
@@ -10,10 +11,7 @@ const HomeSection = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6 home-page p-5">
-              <img
-                src="image/undraw_business_chat_re_gg4h.svg"
-                className="img-fluid"
-              />
+              <img src={undraw_business_chat_re_gg4h} className="img-fluid" />
             </div>
             <div className="col-lg-6 home-page p-3">
               <h3> established </h3>
