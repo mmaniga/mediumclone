@@ -97,7 +97,7 @@ export const membershipDetails = {
       isActive: "active",
     },
     {
-      id: 1,
+      id: 3,
       planId: "INR 300",
       aClassName: "amount-btn",
       isActive: "",
@@ -108,7 +108,7 @@ export const membershipDetails = {
       id: 1,
       provideId: "Apple",
       aClassName: "account-btn",
-      iClassName: "fa-brands fa-apple",
+      iclassName: "fa-brands fa-apple",
     },
     {
       id: 2,
@@ -122,19 +122,50 @@ export const membershipDetails = {
       aClassName: "account-btn",
       iclassName: "fa-brands fa-facebook",
     },
+  ],
+  signInOptionMail: [
     {
-      id: 4,
+      id: 1,
       provideId: "Guest",
       aClassName: "email-account-btn",
       iclassName: "fa-solid fa-user",
     },
     {
-      id: 5,
+      id: 2,
       provideId: "E-Mail",
       aClassName: "email-account-btn",
       iclassName: "fa-sharp fa-solid fa-envelope",
     },
   ],
+  paymentOptions: [
+    {
+      id: 1,
+      aClassName: "pm-card-btn",
+      iclassName: "fa-solid fa-credit-card",
+    },
+    {
+      id: 2,
+      aClassName: "pm-card-btn",
+      iclassName: "fa-brands fa-cc-visa",
+    },
+    {
+      id: 3,
+      aClassName: "pm-card-btn",
+      iclassName: "fa-brands fa-cc-mastercard",
+    },
+    {
+      id: 4,
+      aClassName: "pm-card-btn",
+      iclassName: "fa-regular fa-credit-card",
+    },
+    {
+      id: 5,
+      aClassName: "pm-card-btn",
+      iclassName: "fa-brands fa-cc-amex",
+    },
+  ],
   consentText:
     "I am of Lorem Ipsum available, but the majority have suffered alteration. Ipsum available members caption",
+  privacyText:
+    'Ipsum available <a href=""> alteration</a> &amp;{" "} <a href=""> members </a> I am of Lorem Ipsum available, but the majority have suffered alteration',
 };

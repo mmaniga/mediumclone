@@ -1,8 +1,6 @@
 import React from "react";
 import "../../style.css";
 
-import fewcents_logo_w from "../../assets/images/fewcents_logo_w.png";
-import fewcents_logo_c from "../../assets/images/fewcents_logo_c.png";
 import mearca_logo from "../../assets/images/Mearca.png";
 import NavBar from "./NavBar";
 import { membershipDetails } from "../../data";
@@ -10,7 +8,7 @@ import { membershipDetails } from "../../data";
 function Membership() {
   return (
     <>
-      <title>Mani Projects</title>
+      <title>Membership</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link
@@ -45,7 +43,17 @@ function Membership() {
                   {membershipDetails.signInOptions.map((pp) => {
                     return (
                       <a className={pp.aClassName}>
-                        <i className={pp.iClassName} />
+                        <i className={pp.iclassName} />
+                        {pp.provideId}
+                      </a>
+                    );
+                  })}
+                </div>
+                <div className="d-flex justify-content-around">
+                  {membershipDetails.signInOptionMail.map((pp) => {
+                    return (
+                      <a className={pp.aClassName}>
+                        <i className={pp.iclassName} />
                         {pp.provideId}
                       </a>
                     );
@@ -63,37 +71,19 @@ function Membership() {
                 <div className="pm-footer pb-2">
                   <div className="px-4 pt-4 ">
                     <div className="d-flex justify-content-around">
-                      <a className="pm-card-btn">
-                        <i className="fa-solid fa-credit-card" />
-                      </a>
-                      <a className="pm-card-btn">
-                        <i className="fa-brands fa-cc-visa" />
-                      </a>
-                      <a className="pm-card-btn">
-                        <i className="fa-brands fa-cc-mastercard" />
-                      </a>
-                      <a className="pm-card-btn">
-                        <i className="fa-regular fa-credit-card" />
-                      </a>
-                      <a className="pm-card-btn">
-                        <i className="fa-brands fa-cc-amex" />
-                      </a>
-                      <a>
-                        <img
-                          src={mearca_logo}
-                          width={45}
-                          height={30}
-                          className="img-fluid"
-                        />
-                      </a>
+                      {membershipDetails.paymentOptions.map((p) => {
+                        return (
+                          <a className={p.aClassName}>
+                            <i className={p.iclassName} />
+                          </a>
+                        );
+                      })}
                     </div>
                   </div>
                   <div className="pm-join px-4 py-2 my-2 text-start">
                     <i className="fa-solid fa-shield-halved" />
                     <div className="pm-join-tc">
-                      Ipsum available <a href=""> alteration</a> &amp;{" "}
-                      <a href=""> members </a> I am of Lorem Ipsum available,
-                      but the majority have suffered alteration.{" "}
+                      {membershipDetails.privacyText}
                     </div>
                   </div>
                 </div>
@@ -103,11 +93,7 @@ function Membership() {
           </div>
         </div>
       </section>
-      {/*  --------  Premium Membership Section End  ----------  */}
-      {/*  --------  Footer Section  ----------  */}
       <div id="footer">© Copyright 2011-2023 All rights reserved. </div>
-      {/*  --------  Footer Section End ----------  */}
-      {/*  --------  js  ----------  */}
     </>
   );
 }
