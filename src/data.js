@@ -79,6 +79,92 @@ export const navBarData = [
   },
 ];
 
+export const memberSection = {
+  id: 1,
+  titleText: "The industry's membership",
+  titleSubText: "since the 1500s",
+  stories: [
+    {
+      id: 1,
+      title: "Story of a Robot",
+      caption: "How i tamet the rabit",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+      dateAndReadTime: "Feb 14 - 15 min read",
+    },
+    {
+      id: 2,
+      title: "Anothom is not first",
+      caption: "Look beyond the foundation",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+      dateAndReadTime: "Feb 14 - 15 min read",
+    },
+    {
+      id: 3,
+      title: "Mars and Myra",
+      caption: "Cat that escaped quantum dynamics",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+      dateAndReadTime: "Feb 14 - 15 min read",
+    },
+    {
+      id: 4,
+      title: "Robot and randomnes, walk the talk",
+      caption: "who is robo?",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+      dateAndReadTime: "Feb 14 - 15 min read",
+    },
+    {
+      id: 5,
+      title: "Story of Robotic Lingustics",
+      caption: "The Language Robot Invented",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+      dateAndReadTime: "Feb 14 - 15 min read",
+    },
+    {
+      id: 6,
+      title: "Together is three",
+      caption: "Beyond duality of thoughts",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+      dateAndReadTime: "Feb 14 - 15 min read",
+    },
+    {
+      id: 7,
+      title: "The Math turtor for Robot",
+      caption: "How i taught calculus to robot",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+      dateAndReadTime: "Feb 14 - 15 min read",
+    },
+    {
+      id: 8,
+      title: "Beyond Pi",
+      caption: "Why Robot asked how pi makes sense",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+      dateAndReadTime: "Feb 14 - 15 min read",
+    },
+  ],
+  topics: [
+    "Programming",
+    "Data Science",
+    "Technology",
+    "Self Improvement",
+    "Writing",
+    "Relationships",
+    "Machine Learning",
+    "Robotics",
+    "Productivity",
+    "Politics",
+  ],
+  helpSection: [
+    "Help",
+    "Status",
+    "Writers",
+    "Careers",
+    "Privacy",
+    "Terms",
+    "About Us",
+    "Text to Speach",
+  ],
+};
+
 export const membershipDetails = {
   id: 1,
   titleText:

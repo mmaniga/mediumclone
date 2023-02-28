@@ -1,119 +1,27 @@
 import React from "react";
+import { memberSection } from "../../data";
+import MemberStoryItem from "./MemberStoryItem";
 
 const MemberSection = () => {
   return (
     <>
       <section id="membership">
         <div className="container">
-          <h3>the industry's membership </h3>
-          <h5 className="sub-title pb-2">since the 1500s </h5>
+          <h3>{memberSection.titleText} </h3>
+          <h5 className="sub-title pb-2">{memberSection.titleSubText} </h5>
           <div className="row pt-2">
             <div className="col-lg-8 mb-5">
-              <a
-                href="#"
-                className="membership d-flex justify-content-start mb-2"
-              >
-                <div className="members">
-                  <div className="d-flex justify-content-start">
-                    <div className="members-pic"> G </div>
-                    <div className="members-name">Story Name </div>
-                  </div>
-                  <h5 className="members-caption">
-                    Ipsum available members caption{" "}
-                  </h5>
-                  <p>
-                    {" "}
-                    I am of Lorem Ipsum available, but the majority have
-                    suffered alteration.{" "}
-                  </p>
-                  <span> Feb 14 - 15 min read </span>
-                </div>
-                <div className="members-photo-video"></div>
-              </a>
-              <a
-                href="#"
-                className="membership d-flex justify-content-start mb-2"
-              >
-                <div className="members">
-                  <div className="d-flex justify-content-start">
-                    <div className="members-pic"> G </div>
-                    <div className="members-name">Story Name </div>
-                  </div>
-                  <h5 className="members-caption">
-                    Ipsum available members caption{" "}
-                  </h5>
-                  <p>
-                    {" "}
-                    I am of Lorem Ipsum available, but the majority have
-                    suffered alteration.{" "}
-                  </p>
-                  <span> Feb 14 - 15 min read </span>
-                </div>
-                <div className="members-photo-video"></div>
-              </a>
-              <a
-                href="#"
-                className="membership d-flex justify-content-start mb-2"
-              >
-                <div className="members">
-                  <div className="d-flex justify-content-start">
-                    <div className="members-pic"> G </div>
-                    <div className="members-name">Story Name </div>
-                  </div>
-                  <h5 className="sub-title">
-                    Ipsum available members caption{" "}
-                  </h5>
-                  <p>
-                    {" "}
-                    I am of Lorem Ipsum available, but the majority have
-                    suffered alteration.{" "}
-                  </p>
-                  <span> Feb 14 - 15 min read </span>
-                </div>
-                <div className="members-photo-video"></div>
-              </a>
-              <a
-                href="#"
-                className="membership d-flex justify-content-start mb-2"
-              >
-                <div className="members">
-                  <div className="d-flex justify-content-start">
-                    <div className="members-pic"> G </div>
-                    <div className="members-name">Story Name </div>
-                  </div>
-                  <h5 className="sub-title">
-                    Ipsum available members caption{" "}
-                  </h5>
-                  <p>
-                    {" "}
-                    I am of Lorem Ipsum available, but the majority have
-                    suffered alteration.{" "}
-                  </p>
-                  <span> Feb 14 - 15 min read </span>
-                </div>
-                <div className="members-photo-video"></div>
-              </a>
-              <a
-                href="#"
-                className="membership d-flex justify-content-start mb-2"
-              >
-                <div className="members">
-                  <div className="d-flex justify-content-start">
-                    <div className="members-pic"> G </div>
-                    <div className="members-name">Story Name </div>
-                  </div>
-                  <h5 className="sub-title">
-                    Ipsum available members caption{" "}
-                  </h5>
-                  <p>
-                    {" "}
-                    I am of Lorem Ipsum available, but the majority have
-                    suffered alteration.{" "}
-                  </p>
-                  <span> Feb 14 - 15 min read </span>
-                </div>
-                <div className="members-photo-video"></div>
-              </a>
+              {memberSection.stories.map((p) => {
+                return (
+                  <MemberStoryItem
+                    id={p.id}
+                    title={p.title}
+                    caption={p.caption}
+                    text={p.text}
+                    dateAndReadTime={p.dateAndReadTime}
+                  />
+                );
+              })}
             </div>
             <div className="col-lg-4 mb-3">
               <aside>
