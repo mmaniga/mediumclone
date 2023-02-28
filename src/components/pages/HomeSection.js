@@ -1,4 +1,5 @@
 import React from "react";
+import { homeSectionData } from "../../data";
 
 import undraw_business_chat_re_gg4h from "../../assets/images/undraw_business_chat_re_gg4h.svg";
 const HomeSection = () => {
@@ -14,15 +15,10 @@ const HomeSection = () => {
               <img src={undraw_business_chat_re_gg4h} className="img-fluid" />
             </div>
             <div className="col-lg-6 home-page p-3">
-              <h3> established </h3>
-              <p>
-                {" "}
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s,
-              </p>
+              <h3> {homeSectionData.mainTitle} </h3>
+              <p> {homeSectionData.mainText}</p>
               <button className="home-btn" onClick={handleStartReding}>
-                {" "}
-                Start reading{" "}
+                {homeSectionData.buttonText}
               </button>
             </div>
           </div>

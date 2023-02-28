@@ -4,6 +4,9 @@ import "../../style.css";
 import fewcents_logo_w from "../../assets/images/fewcents_logo_w.png";
 import fewcents_logo_c from "../../assets/images/fewcents_logo_c.png";
 import mearca_logo from "../../assets/images/Mearca.png";
+import NavBar from "./NavBar";
+import { membershipDetails } from "../../data";
+
 function Membership() {
   return (
     <>
@@ -20,62 +23,7 @@ function Membership() {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       />
-      {/*  --------  Header Section  ----------  */}
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <span>M MK </span> Logo
-          </a>
-          <a
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i className="fas fa-bars" />
-          </a>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link" href="index.html">
-                  {" "}
-                  Our story{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  {" "}
-                  Membership{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  {" "}
-                  Write{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  {" "}
-                  Sign In{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  {" "}
-                  Contact Me{" "}
-                </a>
-              </li>
-            </ul>
-            <button className="get-btn"> Get started </button>
-          </div>
-        </div>
-      </nav>
-      {/*  --------  Header Section End  ----------  */}
-      {/*  --------  Premium Membership Section  ----------  */}
+      <NavBar></NavBar>
       <section id="premium-membership">
         <div className="container mb-2">
           <div className="row mb-4 pb-4">
@@ -85,35 +33,23 @@ function Membership() {
                 <div className="pt-2">
                   <img src={mearca_logo} width={100} className="img-fluid" />{" "}
                 </div>
-                <p>
-                  I am of Lorem Ipsum available, but the majority have suffered
-                  alteration. Ipsum available members caption{" "}
-                </p>
+                <p>{membershipDetails.titleText} </p>
                 <hr />
                 <div className="d-flex justify-content-around">
-                  <a className="amount-btn"> INR 99 </a>
-                  <a className="amount-btn active"> INR 200 </a>
-                  <a className="amount-btn"> INR 300 </a>
+                  {membershipDetails.plan.map((p) => {
+                    return <a className={p.aClassName}> {p.planId} </a>;
+                  })}
                 </div>
                 <p>Sing in with </p>
                 <div className="d-flex justify-content-around mb-2">
-                  <a className="account-btn">
-                    <i className="fa-brands fa-apple" /> Apple{" "}
-                  </a>
-                  <a className="account-btn">
-                    <i className="fa-brands fa-google" /> Google{" "}
-                  </a>
-                  <a className="account-btn">
-                    <i className="fa-brands fa-facebook" /> Facebook{" "}
-                  </a>
-                </div>
-                <div className="d-flex justify-content-around">
-                  <a className="email-account-btn">
-                    <i className="fa-solid fa-user" /> Guest{" "}
-                  </a>
-                  <a className="email-account-btn">
-                    <i className="fa-sharp fa-solid fa-envelope" /> E-mail{" "}
-                  </a>
+                  {membershipDetails.signInOptions.map((pp) => {
+                    return (
+                      <a className={pp.aClassName}>
+                        <i className={pp.iClassName} />
+                        {pp.provideId}
+                      </a>
+                    );
+                  })}
                 </div>
                 <div className="checkbox text-start tc-box pb-1">
                   <input
@@ -122,10 +58,7 @@ function Membership() {
                     type="checkbox"
                     defaultChecked=""
                   />
-                  <label>
-                    I am of Lorem Ipsum available, but the majority have
-                    suffered alteration. Ipsum available members caption{" "}
-                  </label>
+                  <label>{membershipDetails.consentText}</label>
                 </div>
                 <div className="pm-footer pb-2">
                   <div className="px-4 pt-4 ">
