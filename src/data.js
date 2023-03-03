@@ -179,13 +179,19 @@ export const membershipDetails = {
     {
       id: 2,
       planId: "INR 200",
-      aClassName: "amount-btn active",
+      aClassName: "amount-btn",
       isActive: "active",
     },
     {
       id: 3,
       planId: "INR 300",
       aClassName: "amount-btn",
+      isActive: "",
+    },
+    {
+      id: 4,
+      planId: "Data Share",
+      aClassName: "amount-btn active",
       isActive: "",
     },
   ],
