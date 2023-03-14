@@ -545,6 +545,107 @@ h2 {
 
 /***********  Premium Membership section End   ************/
 
+/***********  Sign in section    ************/
+#sign-in {
+  width: 100%;
+  background: #fff;
+  color: #696969;
+  padding-top: 80px;
+}
+#sign-in p {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: #696969;
+  line-height: 1.6;
+}
+#sign-in a {
+  font-weight: 600;
+  color: #262261 !important ;
+  text-decoration: underline;
+}
+
+#sign-in a:hover {
+  font-weight: 600;
+  color: #ee4036 !important ;
+  text-decoration: underline;
+}
+
+.mu-btn {
+  font-size: 0.6em !important ;
+  font-weight: 500 !important ;
+  color: #696969 !important ;
+  background: #fff !important;
+  padding: 10px 16px;
+  margin: 6px 2px;
+  cursor: pointer;
+  text-decoration: none !important ;
+  text-align: center;
+  display: grid;
+}
+.mu-btn img {
+  width: 24px;
+  height: 100%;
+  margin: 0px auto;
+  padding-bottom: 5px;
+}
+.mu-btn i {
+  font-size: 1.1em;
+  margin-right: 5px;
+}
+.mu-btn:hover {
+  color: #262261 !important;
+  background: #f4f4f4 !important;
+  text-decoration: none !important ;
+}
+
+#sign-in .input-group-text {
+  color: #696969 !important;
+  background: #fff !important;
+}
+
+.form-control-r {
+  border-right: 0;
+}
+
+.form-control-otp {
+  width: 8% !important;
+  margin-right: 8px;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.sign-up-btn {
+  width: 100%;
+  font-size: 1em;
+  color: #fff !important;
+  background: #262261 !important;
+  border-radius: 50px;
+  padding: 6px 0px;
+  border: 0;
+}
+.sign-up-btn:hover {
+  color: #fff !important;
+  background: #ee4036 !important;
+}
+
+.sign-url-btn {
+  width: 100%;
+  font-size: 1em;
+  color: #262261 !important;
+  background: #ffffff !important;
+  border: 1px solid #262261 !important;
+  border-radius: 50px;
+  padding: 6px 0px;
+  border: 0;
+}
+.sign-url-btn:hover {
+  color: #fff !important;
+  background: #ee4036 !important;
+  border: 1px solid #ee4036 !important;
+}
+/***********  Sign in section End   ************/
+
 /***********  contact section End   ************/
 #footer {
   background: #292f33;

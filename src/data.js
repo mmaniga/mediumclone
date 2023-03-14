@@ -68,11 +68,6 @@ export const navBarData = [
     linkPage: "/writeStory",
   },
   {
-    id: 4,
-    title: "Sign In",
-    linkPage: "/login",
-  },
-  {
     id: 5,
     title: "Contact Us",
     linkPage: "/contactUs",
@@ -178,20 +173,20 @@ export const membershipDetails = {
     },
     {
       id: 2,
-      planId: "INR 200",
-      aClassName: "amount-btn",
+      planId: "Data Sharing",
+      aClassName: "amount-btn active",
       isActive: "active",
     },
     {
       id: 3,
-      planId: "INR 300",
+      planId: "INR 200",
       aClassName: "amount-btn",
       isActive: "",
     },
     {
       id: 4,
-      planId: "Data Share",
-      aClassName: "amount-btn active",
+      planId: "INR 300",
+      aClassName: "amount-btn ",
       isActive: "",
     },
   ],
