@@ -18,7 +18,7 @@ const App = () => {
           <Route exact path="/" component={MediumClone} />
           <Route exact path="/Membership" component={SimpleMembership} />
           <Route exact path="/ourStory" component={MediumClone} />
-          <Route exact path="/writeStory" component={MyData} />
+          <Route exact path="/myData" component={MyData} />
           <Route exact path="/login" component={MediumClone} />
           <Route exact path="/contactUs" component={MediumClone} />
         </Switch>

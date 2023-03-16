@@ -63,11 +63,6 @@ export const navBarData = [
     linkPage: "/Membership",
   },
   {
-    id: 3,
-    title: "Write",
-    linkPage: "/writeStory",
-  },
-  {
     id: 5,
     title: "Contact Us",
     linkPage: "/contactUs",
@@ -235,6 +230,14 @@ export const userData = {
       dicount: "$13 for 3 Months",
       period: "3 Months",
       staus: " Accepted",
+    },
+    {
+      id: 1,
+      category: "Auto",
+      branad: "Ola",
+      dicount: "$13 for 3 Months",
+      period: "3 Months",
+      staus: " Pending",
     },
   ],
 };

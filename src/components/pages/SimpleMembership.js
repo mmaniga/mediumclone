@@ -6,6 +6,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 import signInImage from "../../assets/images/sign_img.png";
 import BackgroundImage from "../../assets/images/bg.png";
+import { userData } from "../../data";
 
 export default function SimpleMembership() {
   const { isLoading, isAuthenticated, error, user, loginWithRedirect, logout } =
@@ -62,9 +63,9 @@ export default function SimpleMembership() {
               <div class="col-lg-6 col-md-6 col-sm-1 px-2">
                 <h4 class="sub-title"> Welcome to Premium Membership </h4>
                 <p>
-                  <a href="#">Click here</a> to see all brands that offer you
-                  Discounts for your data. You could choose to accept all or any
-                  of these.
+                  <a href="/myData">Click here</a> to see all brands that offer
+                  you Discounts for your data. You could choose to accept all or
+                  any of these.
                 </p>
 
                 <div class="col-lg-6 col-md-6 col-sm-1 px-2">
