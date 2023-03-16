@@ -1,0 +1,660 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "PT sans", "Roboto", "Arial", sans-serif;
+}
+/*
+
+@import url(../css/icons/font-awesome/css/fontawesome-all.min.css);
+@import url(../css/icons/icons/themify-icons/themify-icons.css);
+@import url(../css/icons/icons/material-design-iconic-font/css/materialdesignicons.min.css);
+@import url(../css/icons/icons/weather-icons/css/weather-icons.min.css);
+*/
+
+body {
+  font-family: "Roboto", "PT sans", "Arial", sans-serif;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color: #696969 !important;
+}
+
+::root {
+  --theme-gray: #292f33;
+  --theme-dimGray: #66757f;
+  --theme-silver: #ccd6dd;
+  --theme-paris-blue: #262261;
+  --theme-cinnabar: #ee4036;
+  --theme-yellow-orange: #faaf40;
+}
+nav {
+  width: 100%;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+  background: #262261 !important;
+  line-height: 1.5 !important;
+  padding: 0px 0px !important;
+}
+nav a {
+  color: #fff !important;
+}
+nav a span {
+  color: #faaf40 !important;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-right: 10px;
+  font-style: oblique;
+}
+.navbar {
+  padding-left: 1rem !important;
+  margin: 0px !important;
+  padding-right: 1rem !important;
+}
+.navbar-dark .navbar-toggler {
+  border: 0 !important;
+  padding: 0 !important;
+}
+.navbar-dark .navbar-toggler i {
+  border: 0 !important;
+  color: #fff !important;
+  font-size: 30px;
+}
+.navbar-brand {
+  font-size: 34px;
+  color: #e1e8ed !important;
+}
+.nav-link {
+  font-size: 18px;
+  margin: 0px;
+  padding: 20px 18px 20px 18px !important;
+  color: rgba(255, 255, 255, 1) !important;
+  background: #262261 !important;
+  transition: 0.5s;
+  transform: scale(0.8);
+  border-bottom: 4px solid #262261 !important;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  transition: 0.5s;
+  transform: scale(1);
+  border-bottom: 4px solid #ee4036 !important;
+}
+.get-btn {
+  font-size: 16px;
+  color: #fff;
+  background: #ee4036 !important;
+  border-radius: 50px;
+  padding: 6px 20px;
+  border: 0;
+  transition: 0.5s;
+  transform: scale(0.8);
+}
+.get-btn:hover {
+  color: #fff !important;
+  background: #ee4036 !important;
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+/***********  @media  ************/
+@media screen and (max-width: 768px) {
+  .navbar-expand-md .navbar-collapse {
+    margin-bottom: -8px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .navbar-expand-md .navbar-collapse {
+    margin-bottom: -8px;
+  }
+}
+/***********  nav end    ************/
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0;
+  border-bottom: 1px solid #696969;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 500;
+  color: #262261 !important;
+}
+h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #ee4036;
+  margin: 0;
+}
+h5 {
+  font-size: 1em;
+  font-weight: 500;
+  color: #faaf40;
+  margin: 0;
+}
+h2 {
+  font-size: 1em;
+  font-weight: 500;
+  color: #ee4036;
+  margin: 0;
+}
+.sub-title {
+  font-size: 1em;
+  font-weight: 500;
+  color: #292f33;
+  margin: 0;
+}
+.section-text {
+  font-size: 8em;
+  color: #292f33;
+  margin: 0;
+}
+
+/***********  Home section    ************/
+#home {
+  width: 100%;
+  min-height: 90vh;
+  background: #fff;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  color: #696969;
+  padding-top: 80px;
+}
+.home-page {
+  padding: 30px;
+}
+.home-page h3 {
+  padding-top: 80px;
+  font-size: 3.6em;
+  font-weight: bold;
+  font-style: oblique;
+  color: #262261;
+}
+.home-btn {
+  font-size: 1.2em;
+  color: #fff;
+  background: #ee4036 !important;
+  border-radius: 50px;
+  padding: 10px 40px;
+  border: 0;
+  transition: 0.5s;
+  transform: scale(0.8);
+  margin: 24px 0px 0px 0px;
+}
+.home-btn:hover {
+  color: #fff !important;
+  background: #ee4036 !important;
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+/***********  @media  ************/
+
+@media screen and (max-width: 768px) {
+}
+
+/***********  Home section End   ************/
+
+/***********  about our story section    ************/
+#our_story {
+  background: #fff;
+  padding-top: 40px;
+  color: #696969;
+}
+.story {
+  overflow: hidden;
+  transition: 1s;
+  position: relative;
+  border: 1px solid #fff;
+  padding: 4px;
+  background: #fff;
+  text-decoration: none;
+}
+.story:hover {
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+  transition: 1s;
+  transform: scale(1.2);
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.story-count {
+  margin: -10px 16px 0 0;
+  color: #faaf40;
+  font-size: 2.4em;
+  font-weight: bold;
+  font-style: oblique;
+}
+.our_story {
+  line-height: 1.2;
+}
+.rounded-circle {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 4px 6px 0px 0px !important;
+  background: #292f33;
+  color: #fff;
+}
+.story-pic {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 6px;
+  background: #292f33;
+  color: #fff;
+  display: inline;
+  padding: 2px 4px;
+}
+.story-name {
+  line-height: 2;
+  color: #ee4036;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.our_story p {
+  line-height: 1.2;
+  font-size: 0.8em;
+  color: #696969;
+  padding: 8px 0px 0px 0px;
+  margin: 0;
+}
+.our_story span {
+  line-height: 1.2;
+  font-size: 0.6em;
+  font-style: italic;
+  color: #262261;
+  font-weight: 600;
+}
+
+/***********  about Our Story section End   ************/
+
+/***********   membership section    ************/
+#membership {
+  background: #fff;
+  padding-top: 40px;
+}
+
+.membership {
+  position: relative;
+  border: 1px solid #fff;
+  padding: 8px;
+  color: #696969;
+  background: #fff;
+  text-decoration: none;
+  margin-right: 1em;
+}
+.membership:hover {
+  cursor: pointer;
+  position: relative;
+  color: #696969;
+  border: 1px solid #ccc;
+  text-decoration: none;
+}
+.members {
+  line-height: 1.2;
+}
+.members-pic {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 6px;
+  background: #292f33;
+  color: #fff;
+  display: inline;
+  padding: 2px 4px;
+}
+
+.members-name {
+  line-height: 2;
+  color: #ee4036;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.members-caption {
+  color: #292f33;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.members p {
+  line-height: 1em;
+  font-size: 0.8em;
+  color: #696969;
+  padding: 8px 0px 0px 0px;
+  margin: 0;
+}
+.members span {
+  line-height: 1.2;
+  font-size: 0.6em;
+  font-style: italic;
+  color: #262261;
+  font-weight: 600;
+}
+.members-photo-video {
+  width: 230px;
+  height: 130px;
+  background: #ccd6dd;
+}
+
+#membership-right {
+  color: #696969;
+}
+.right-side-btn {
+  font-size: 0.6em;
+  color: #262261;
+  background: #fff !important;
+  padding: 4px 12px;
+  border: 1px solid #262261;
+  margin: 3px 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.right-side-btn:hover {
+  color: #fff !important;
+  background: #ee4036 !important;
+  border: 1px solid #ee4036;
+  text-decoration: none;
+}
+.m-right {
+  height: 10px;
+  border-bottom: 1px solid #262261;
+  margin-bottom: 10px;
+}
+.right-menu {
+  font-size: 0.6em;
+  color: #262261;
+  padding: 4px 12px;
+  margin: 3px 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.right-menu:hover {
+  font-size: 0.6em;
+  color: #ee4036;
+  padding: 4px 12px;
+  margin: 3px 6px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/***********  membership section End   ************/
+
+/***********  Premium Membership section    ************/
+#premium-membership {
+  width: 100%;
+  background: #fff;
+  color: #696969;
+  padding-top: 80px;
+}
+.pm-box {
+  width: 100%;
+  color: #696969;
+  text-align: center;
+  box-shadow: 0px 0px 8px 4px rgba(105, 105, 105, 0.3);
+  border-radius: 6px;
+}
+.pm-box p {
+  line-height: 1.2;
+  font-size: 0.8em;
+  color: #696969;
+  padding-top: 16px;
+}
+.amount-btn {
+  width: 32%;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #262261;
+  background: #fff !important;
+  padding: 6px;
+  border: 1px solid #696969;
+  cursor: pointer;
+  text-decoration: none;
+}
+.amount-btn:hover,
+.active {
+  color: #fff !important;
+  background: #ee4036 !important;
+  border: 1px solid #ee4036;
+  text-decoration: none;
+}
+
+.account-btn {
+  width: 32%;
+  font-size: 0.6em;
+  font-weight: 600;
+  color: #696969;
+  background: #fff !important;
+  padding: 6px;
+  border: 1px solid #696969;
+  cursor: pointer;
+  text-decoration: none;
+}
+.account-btn i {
+  font-size: 1.1em;
+  margin-right: 5px;
+}
+.account-btn:hover {
+  color: #fff !important;
+  background: #ee4036 !important;
+  border: 1px solid #ee4036;
+  text-decoration: none;
+}
+.email-account-btn {
+  width: 48%;
+  font-size: 0.6em;
+  font-weight: 600;
+  color: #696969;
+  background: #fff !important;
+  padding: 6px;
+  border: 1px solid #696969;
+  cursor: pointer;
+  text-decoration: none;
+}
+.email-account-btn i {
+  font-size: 1.1em;
+  margin-right: 5px;
+}
+.email-account-btn:hover {
+  color: #fff !important;
+  background: #ee4036 !important;
+  border: 1px solid #ee4036;
+  text-decoration: none;
+}
+
+.tc-box {
+  display: flex;
+  justify-content: start;
+}
+.tc-box .btn-che {
+  width: 24px;
+  height: 24px;
+  margin: 20px 0px 20px 6px !important;
+  padding: 2px !important;
+  border: 1px solid #262261 !important;
+}
+
+.tc-box label {
+  font-size: 0.6em;
+  color: #696969;
+  line-height: 1.2;
+  margin: 20px 10px 10px 10px !important;
+}
+.pm-footer {
+  margin: 0rem -1.5rem !important ;
+  background: #262261;
+  border-radius: 0px 0px 6px 6px;
+  color: #fff;
+}
+.pm-card-btn {
+  background: #fff;
+  margin: 0 6px 0 0;
+  padding: 12px 12px 4px 12px;
+  border-radius: 6px;
+  color: #696969;
+}
+.pm-card-btn i {
+  font-size: 1.4em;
+}
+
+.pm-card-btn:hover {
+  color: #fff !important;
+  background: #ee4036 !important;
+  text-decoration: none;
+}
+
+.pm-join {
+  color: #fff;
+  display: flex;
+  justify-self: start;
+}
+
+.pm-join i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin: 0px 10px 0px 5px;
+  background-color: #ffffff;
+  color: #ee4036;
+  font-size: 0.8em;
+  padding: 6px 6px 0px 6px;
+}
+.pm-join-tc {
+  font-size: 0.6em;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.pm-join-tc a {
+  color: #faaf40;
+  text-decoration: underline;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.pm-join-tc a:hover {
+  color: #ee4036;
+  text-decoration: underline;
+  margin-right: 4px;
+}
+
+/***********  Premium Membership section End   ************/
+
+/***********  Sign in section    ************/
+#sign-in {
+  width: 100%;
+  background: #fff;
+  color: #696969;
+  padding-top: 80px;
+}
+#sign-in p {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: #696969;
+  line-height: 1.6;
+}
+#sign-in a {
+  font-weight: 600;
+  color: #262261 !important ;
+  text-decoration: underline;
+}
+
+#sign-in a:hover {
+  font-weight: 600;
+  color: #ee4036 !important ;
+  text-decoration: underline;
+}
+
+.mu-btn {
+  font-size: 0.6em !important ;
+  font-weight: 500 !important ;
+  color: #696969 !important ;
+  background: #fff !important;
+  padding: 10px 16px;
+  margin: 6px 2px;
+  cursor: pointer;
+  text-decoration: none !important ;
+  text-align: center;
+  display: grid;
+}
+.mu-btn img {
+  width: 24px;
+  height: 100%;
+  margin: 0px auto;
+  padding-bottom: 5px;
+}
+.mu-btn i {
+  font-size: 1.1em;
+  margin-right: 5px;
+}
+.mu-btn:hover {
+  color: #262261 !important;
+  background: #f4f4f4 !important;
+  text-decoration: none !important ;
+}
+
+#sign-in .input-group-text {
+  color: #696969 !important;
+  background: #fff !important;
+}
+
+.form-control-r {
+  border-right: 0;
+}
+
+.form-control-otp {
+  width: 8% !important;
+  margin-right: 8px;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.sign-up-btn {
+  width: 100%;
+  font-size: 1em;
+  color: #fff !important;
+  background: #262261 !important;
+  border-radius: 50px;
+  padding: 6px 0px;
+  border: 0;
+}
+.sign-up-btn:hover {
+  color: #fff !important;
+  background: #ee4036 !important;
+}
+
+.sign-url-btn {
+  width: 100%;
+  font-size: 1em;
+  color: #262261 !important;
+  background: #ffffff !important;
+  border: 1px solid #262261 !important;
+  border-radius: 50px;
+  padding: 6px 0px;
+  border: 0;
+}
+.sign-url-btn:hover {
+  color: #fff !important;
+  background: #ee4036 !important;
+  border: 1px solid #ee4036 !important;
+}
+/***********  Sign in section End   ************/
+
+/***********  contact section End   ************/
+#footer {
+  background: #292f33;
+  color: #ccd6dd;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-top: -20px;
+  border-top: 1px solid #ccd6dd;
+}

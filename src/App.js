@@ -8,6 +8,7 @@ import MediumClone from "./components/pages/MediumClone";
 import Membership from "./components/pages/Membership";
 import MembershipNew from "./components/pages/MembershipNew";
 import SimpleMembership from "./components/pages/SimpleMembership";
+import MyData from "./components/pages/MyData";
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
           <Route exact path="/" component={MediumClone} />
           <Route exact path="/Membership" component={SimpleMembership} />
           <Route exact path="/ourStory" component={MediumClone} />
-          <Route exact path="/writeStory" component={MediumClone} />
+          <Route exact path="/writeStory" component={MyData} />
           <Route exact path="/login" component={MediumClone} />
           <Route exact path="/contactUs" component={MediumClone} />
         </Switch>

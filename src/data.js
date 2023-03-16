@@ -160,6 +160,85 @@ export const memberSection = {
   ],
 };
 
+export const userData = {
+  id: 1,
+  title: "Title Text",
+  headers: {
+    id: 2,
+    category: "Category",
+    brand: "Brand",
+    discount: "Discount",
+    sharing: "Data Sharing Period",
+    status: "Accept/Reject",
+  },
+  data: [
+    {
+      id: 1,
+      category: "CPG",
+      branad: "Lipton",
+      dicount: "$10 for 3 Months",
+      period: "3 Months",
+      staus: " Accepted",
+    },
+    {
+      id: 2,
+      category: "CPG",
+      branad: "Knorr",
+      dicount: "$10 for 3 Months",
+      period: "3 Months",
+      staus: " Accepted",
+    },
+    {
+      id: 1,
+      category: "Auto",
+      branad: "Ford",
+      dicount: "$10 for 3 Months",
+      period: "3 Months",
+      staus: " Accepted",
+    },
+    {
+      id: 1,
+      category: "Auto",
+      branad: "Tesla",
+      dicount: "$10 for 3 Months",
+      period: "3 Months",
+      staus: " Accepted",
+    },
+    {
+      id: 1,
+      category: "Auto",
+      branad: "BMW",
+      dicount: "$10 for 3 Months",
+      period: "3 Months",
+      staus: " Rejected",
+    },
+    {
+      id: 1,
+      category: "Auto",
+      branad: "Fiat",
+      dicount: "$12 for 3 Months",
+      period: "3 Months",
+      staus: " Warning",
+    },
+    {
+      id: 1,
+      category: "Auto",
+      branad: "Hundai",
+      dicount: "$9 for 3 Months",
+      period: "3 Months",
+      staus: " Rejected",
+    },
+    {
+      id: 1,
+      category: "Auto",
+      branad: "Kia",
+      dicount: "$13 for 3 Months",
+      period: "3 Months",
+      staus: " Accepted",
+    },
+  ],
+};
+
 export const membershipDetails = {
   id: 1,
   titleText:
