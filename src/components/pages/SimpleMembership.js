@@ -7,6 +7,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import signInImage from "../../assets/images/sign_img.png";
 import BackgroundImage from "../../assets/images/bg.png";
 import { userData } from "../../data";
+import NavBar from "./NavBar";
 
 export default function SimpleMembership() {
   const { isLoading, isAuthenticated, error, user, loginWithRedirect, logout } =
@@ -21,6 +22,7 @@ export default function SimpleMembership() {
   if (!isAuthenticated) {
     return (
       <>
+        <NavBar></NavBar>
         <section id="sign-in">
           <div class="container mb-2">
             <div class="row mb-4 pb-4 pt-4">
@@ -54,6 +56,7 @@ export default function SimpleMembership() {
   } else {
     return (
       <>
+        <NavBar></NavBar>
         <section id="sign-in">
           <div class="container mb-2">
             <div class="row mb-4 pb-4 pt-4">

@@ -7,7 +7,7 @@ function UserData() {
     <section id="brand-list">
       <div class="container mt-2">
         <h3>List of Brands With their Offers</h3>
-        <h5 class="sub-title pb-2">since the 1500s </h5>
+        <h5 class="sub-title pb-2"> </h5>
 
         <div class="row mb-4 pb-4 pt-4">
           <table class="table bl-table-bg  align-middle table-borderless ">
